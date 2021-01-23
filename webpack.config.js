@@ -21,8 +21,9 @@ module.exports = {
             },
           },
         ],
-      },
-    ],
+      },{ test: /\.css$/,
+         loader: "style-loader!css-loader" }
+    ]
   },
   output: {
     path: path.join(__dirname, '/public/webpack/'),
