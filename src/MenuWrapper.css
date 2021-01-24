@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: 1px #c9c9c9 solid;
+}
+
+.navbar span{
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.navbar span:hover{
+  color:tomato;
+  font-size: 2em;
+}
+
+.navbar div{
+  flex:0.1rem;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  flex: 3 60rem;
+}
+.sidebar {
+  flex: 1 20rem;
+}
