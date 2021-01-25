@@ -13,15 +13,10 @@ class App extends React.Component {
       super();
       this.state ={
             mydata : data,
-      };
+            filter: ""
+        };
   }
-
-
-
-  filterDishes(key){
-
-  }
-
+      
     render() {
 
         return <div className="App">
@@ -29,7 +24,7 @@ class App extends React.Component {
                     <h1>OpenTable Menu</h1>
                 </header>
                 <main>
-                <MenuWrapper data={this.state.mydata} />
+                <MenuWrapper data={this.state.mydata} filter={this.state.filter} />
                 </main>
                </div>;
     }

@@ -3,12 +3,15 @@ import "./MenuWrapper.css";
 import Nav from "react-bootstrap/Nav";
 
 class MenuNavbar extends React.Component {
+
+
   render() {
-      return  <div className="filter">
+
+     return   <div className="filter">
       <Nav variant="pills" defaultActiveKey="/" className="NavbarItems" className="col-sm-6">
         { this.props.category.map( (cat, index) =>
           <Nav.Item key={index} >
-          <span>{cat}</span>
+          <span value={cat} onClick={this.props.filterData}>{cat}</span>
           </Nav.Item>
         )}
         </Nav>

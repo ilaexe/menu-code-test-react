@@ -10,14 +10,17 @@ class MenuList extends React.Component {
       <div>
         {dishes.map((element, index) => {
           return (
-            <ul className="dishes" key={index}>
+            <div key={index}>
               <h1>{element[0]}</h1>
-              <div>
-                <MenuItem item={element[1]} />
-              </div>
-            </ul>
+              <ul className="dishes">
+                <div>
+                  <MenuItem item={element[1]} />
+                </div>
+              </ul>
+            </div>
           );
         })}
+        )
       </div>
     );
   }
