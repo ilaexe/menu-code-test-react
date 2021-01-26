@@ -3,6 +3,8 @@ import "./MenuItem.css";
 import Card from "react-bootstrap/Card";
 
 class MenuItem extends React.Component {
+
+
   render() {
     return (
       <div>
@@ -20,7 +22,7 @@ class MenuItem extends React.Component {
                     </div>
                     <br></br>
                     <div className="row">
-                      <img src="https://res.cloudinary.com/glovoapp/image/fetch///https://glovoapp.com/images/svg/plus.svg" />
+                      <img src="https://res.cloudinary.com/glovoapp/image/fetch///https://glovoapp.com/images/svg/plus.svg" onClick={() =>this.props.addToCart(item)} />
                     </div>
                   </Card.Body>
                 </Card>
