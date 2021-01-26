@@ -11,7 +11,7 @@ class MenuNavbar extends React.Component {
       <Nav variant="pills" defaultActiveKey="/" className="NavbarItems" className="col-sm-6">
         { this.props.category.map( (cat, index) =>
           <Nav.Item key={index} >
-          <span value={cat} onClick={this.props.filterData}>{cat}</span>
+          <span onClick={this.props.filterData}>{cat}</span>
           </Nav.Item>
         )}
         </Nav>

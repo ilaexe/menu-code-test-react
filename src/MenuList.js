@@ -14,7 +14,7 @@ class MenuList extends React.Component {
               <h1>{element[0]}</h1>
               <ul className="dishes">
                 <div>
-                  <MenuItem item={element[1]} />
+                  <MenuItem item={element[1]} addToCart={this.props.addToCart}/>
                 </div>
               </ul>
             </div>

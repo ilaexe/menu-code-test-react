@@ -12,9 +12,8 @@ class App extends React.Component {
   constructor(){
       super();
       this.state ={
-            mydata : data,
-            filter: ""
-        };
+            mydata : data
+         };
   }
       
     render() {
@@ -24,7 +23,7 @@ class App extends React.Component {
                     <h1>OpenTable Menu</h1>
                 </header>
                 <main>
-                <MenuWrapper data={this.state.mydata} filter={this.state.filter} />
+                <MenuWrapper data={this.state.mydata}/>
                 </main>
                </div>;
     }
