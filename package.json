@@ -12,7 +12,8 @@
     "bootstrap": "^4.5.3",
     "react": "^16.5.2",
     "react-bootstrap": "^1.4.3",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "sweetalert2": "^10.13.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
