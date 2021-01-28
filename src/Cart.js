@@ -11,7 +11,6 @@ class Cart extends React.Component {
       totalitems += it.count;
     });
 
-    console.log("PORCAAA TROIAA", this.props);
 
     return (
       <div>
@@ -30,7 +29,7 @@ class Cart extends React.Component {
               return (
                 <li key={item.id}>
                   {" "}
-                  <h5>{item.name}{" "}</h5>
+                  <h5>{item.name} </h5>
                   <div className="right">
                     {" "}
                     $ {item.price} x {item.count}
@@ -48,7 +47,7 @@ class Cart extends React.Component {
           <div className="cart">
             <div className="total">
               {" "}
-              <h5> TOTAL :  ${" "}{total}</h5>
+              <h5> TOTAL : $ {total}</h5>
               <button>Checkout</button>
             </div>
           </div>
