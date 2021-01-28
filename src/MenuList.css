@@ -5,9 +5,5 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
-
-.dishes li{
-    flex: 1 1 29rem;
+    
 }
